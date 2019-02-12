@@ -10,51 +10,142 @@ body {
 	position: relative;
 }
 
-#triangle {
-	width: 0;
+.acircle1{
+width: 170px;
+height: 110px;
+background: black;
+top: 360px;
+left: 285px;
+position: absolute;
+border-radius: 15px;
+}
+
+.arectangle{
+width: 170px;
+height: 110px;
+background: black;
+top: 360px;
+left: 285px;
+position: absolute;
+border-radius: 15px;
+}
+.acricle1 {
+      width: 60px;
+      height: 60px;
+      background: gray;
+      border-radius: 50%;
+			top: 390px;
+			left: 310px;
+			position: absolute;
+    }
+	.acricle2 {
+		      width: 40px;
+		      height: 40px;
+		      background: darkgray;
+		      border-radius: 50%;
+					top: 400px;
+					left: 320px;
+					position: absolute;
+		    }
+	.acricle3 {
+				      width: 30px;
+				      height:30px;
+				      background: darkgray;
+				      border-radius: 50%;
+							top: 380px;
+							left: 400px;
+							position: absolute;
+				    }
+						.acricle4 {
+									      width: 10px;
+									      height:10px;
+									      background: red;
+									      border-radius: 50%;
+												top: 390px;
+												left: 410px;
+												position: absolute;
+									    }
+
+.bsquare{
+width: 160px;
+height: 160px;
+background: black;
+top: 310px;
+left: 460px;
+position: absolute;
+border-radius: 15px;
+}
+
+.brectangle{
+width: 40px;
+height: 80px;
+background: gray;
+top: 310px;
+left: 520px;
+position: absolute;
+  border-bottom-right-radius: 15px;
+	 border-bottom-left-radius: 15px;
+}
+.btrapezoid {
+	border-bottom: 35px solid black;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
 	height: 0;
-	border-left: 75px solid transparent;
-	border-right: 75px solid transparent;
-	border-bottom: 150px solid yellow;
+	width: 120px;
+	top: 277px;
+	left: 470px;
+	border-top-right-radius: 15px;
+	 border-top-left-radius: 15px;
 	position: absolute;
-	top: 203px;
-	left: 60px;
-}
+	}
 
-#square {
-	width: 150px;
-	height: 150px;
-	background: red;
-	top: 203px;
-	left: 270px;
-	position: absolute;
-
-	/* uncomment to add keyframe animation */
-	/* animation: spin 2s infinite; */
-
-}
-
-#circle {
-	width: 150px;
-	height: 150px;
-	background: blue;
-	border-radius: 150px;
-	top: 203px;
+	.bsquaretop{
+	width: 120px;
+	height: 70px;
+	background: black;
+	top: 210px;
 	left: 480px;
 	position: absolute;
+	border-top-right-radius: 15px;
+	 border-top-left-radius: 15px;
+	}
+	.pear {
+	display: block;
+	width: 110px;
+	height: 140px;
+	top: 340px;
+	left: 640px;
+	position: absolute;
+	background-color: #BBD36B;
+	border-radius: 70% 70% 70% 70% / 70% 70% 60% 60%;
+	transform: rotate(320deg);
 }
 
-#clip {
-	width: 150px;
-	height: 150px;
-	background: green;
-	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-	top: 203px;
-	left: 690px;
-	position: absolute;
+.ecurvedarrow {
+      position: relative;
+      width: 0;
+      height: 0;
+			top: 360px;
+			left: 645px;
+      border-top: 9px solid transparent;
+      border-right: 9px solid brown;
+      transform: rotate(-0deg);
+				position: absolute;
 
-	/* uncomment for css transitions */
-	/* transition: all 400ms ease; */
+    }
+.ecurvedarrow:after {
+      content: "";
+      position: absolute;
+      border: 0 solid transparent;
+      border-top: 5px solid brown;
+      border-radius: 20px 0 0 0;
+      top: -12px;
+      left: -9px;
+      width: 12px;
+      height: 2px;
+      transform: rotate(35deg);
+				position: absolute;
+    }
 }
 
 /* animations */
