@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crystal Yang</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+</head>
+<style>
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+    width:100%;
+}
+
+body {
+  display: table-cell;
+  vertical-align:middle;
+  text-align:center;
+  margin: 0px;
+  padding: 0px;
+  max-width: 100vw;
+  overflow-x:hidden;
+  background-color: #C34129;
+}
+
+.botton1{
+  background-color: #303960;
+  height:20px;
+  width:45px;
+  left:930px;
+  top:60px;
+  position: absolute;
+}
+.botton2{
+  background-color:#303960;
+  height:20px;
+  width:45px;
+  left:930px;
+  top:130px;
+  position: absolute;
+}
+.botton3{
+  background-color:#303960;
+  height:20px;
+  width:45px;
+  left:930px;
+  top:200px;
+  position: absolute;
+}
+
+.a1{
+  top: 120px;
+      left: 150px;
+  position: absolute;
+  color: black;
+}
+.a11{
+  position: relative;
+  text-align: center;
+  border-left: 6px solid #F6C570;
+  height: 50px;
+  width: 7px;
+  top:90px;
+  background-color: #F6C570;
+  transform: skewx(-12deg);
+}
+.a12{
+  position: relative;
+  text-align: center;
+  border-left: 6px solid #F6C570;
+  height: 50px;
+  width: 7px;
+  top:40px;
+  left:13px;
+  background-color: #F6C570;
+  transform: skewx(12deg);
+}
+.a13{
+  position: relative;
+    text-align: center;
+    border-left: 6px solid #303960;
+    height: 17px;
+    width: 8px;
+    top: 70px;
+    left: -16px;
+    background-color: #303960;
+    transform: skewx(-12deg);
+    transform-origin: 0 100%;
+    transition: all 100ms ease-in-out;
+}
+.a1:hover .a13 {
+  transform: skewx(-12deg) scaleY(5.7);
+}
+.a14{
+  position: relative;
+  text-align: center;
+  border-left: 6px solid #303960;
+  height: 17px;
+  width: 8px;
+  top:53px;
+  left:25px;
+  background-color: #303960;
+  transform: skewx(12deg);
+}
+
+.l1{
+  top: 120px;
+  left: 290px;
+  position: absolute;
+
+}
+.l11{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height: 85px;
+  width: 8px;
+  top:90px;
+  background-color: #F6C570;
+}
+.l12{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #303960;
+  height: 15px;
+  width: 20px;
+  top:95px;
+  left:20px;
+  background-color: #303960;
+  transform-origin:100% 120%;
+  transition: all 100ms ease-in-out;
+}
+.l1:hover .l12{
+transform:scaleX(1.7);
+}
+
+.i1{
+  top: 120px;
+  left: 360px;
+  position: absolute;
+  color: black;
+}
+.i11{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height: 42px;
+  width: 8px;
+  top:90px;
+  background-color: #F6C570;
+}
+.i12{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height: 42px;
+  width: 8px;
+  top:112px;
+  background-color: #F6C570;
+}
+.i13{
+  position: relative;
+  text-align: center;
+  height: 15px;
+  width: 15px;
+  top:97px;
+  background-color: #F6C570;
+  transform-origin:0% 100%;
+  transition: all 100ms ease-in-out;
+}
+.i1:hover .i13{
+transform:scaleY(4.7);
+}
+
+.t1{
+  top: 120px;
+  left: 400px;
+  position: absolute;
+}
+.t11{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height: 15px;
+  width: 50px;
+  top:92px;
+  background-color: #F6C570;
+}
+.t12{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #303960;
+  height: 41px;
+  width: 8px;
+  top:140px;
+  left:20px;
+  background-color: #303960;
+  transform-origin:0% 100%;
+  transition: all 100ms ease-in-out;
+}
+.t1:hover .t12{
+transform:scaleY(2.2);
+}
+
+.t2{
+  top:120px;
+  left: 470px;
+  position: absolute;
+}
+.t21{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height: 15px;
+  width: 50px;
+  top:92px;
+  background-color: #F6C570;
+}
+.t22{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #303960;
+  height: 41px;
+  width: 8px;
+  top:140px;
+  left:20px;
+  background-color: #303960;
+  transform-origin:0% 100%;
+  transition: all 100ms ease-in-out;
+}
+.t2:hover .t22{
+transform:scaleY(2.2);
+
+}
+.l2{
+  top: 122px;
+  left: 545px;
+  position: absolute;
+
+}
+.l21{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height: 85px;
+  width: 8px;
+  top:90px;
+  background-color: #F6C570;
+}
+.l22{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #303960;
+  height: 15px;
+  width: 20px;
+  top:95px;
+  left:20px;
+  background-color: #303960;
+  transform-origin:100% 120%;
+  transition: all 100ms ease-in-out;
+}
+.l2:hover .l22{
+transform:scaleX(1.7);
+}
+
+.e{
+  top: 122px;
+  left: 615px;
+  position: absolute;
+  color: black;
+}
+.e1{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height: 40px;
+  width: 8px;
+  top:90px;
+  background-color: #F6C570;
+}
+.e2{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height:15px;
+  width: 38px;
+  top:50px;
+  background-color: #F6C570;
+
+}
+.e3{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #303960;
+  height:15px;
+  width: 15px;
+  top:80px;
+  left:20px;
+  background-color: #303960;
+  transform-origin:100% 120%;
+  transition: all 100ms ease-in-out;
+}
+.e:hover .e3{
+transform:scaleX(1.9);
+}
+.e4{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height: 40px;
+  width: 8px;
+  top:84px;
+  background-color: #F6C570;
+}
+.e5{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height:15px;
+  width: 38px;
+  top:69px;
+  background-color: #F6C570;
+}
+
+.c{
+  top:260px;
+  left: 130px;
+  position: absolute;
+  color: black;
+}
+.c1{
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 2.5px;
+  width: 0px;
+  top:115px;
+  border: 16px solid #F6C570;
+  border-top-right-radius:100px;
+  border-top-left-radius:100px;
+  border-bottom:0;
+
+}
+.c2{
+  position: relative;
+ text-align: center;
+ padding: 12px;
+ margin-bottom: 6px;
+ height: 2.5px;
+ width: 0px;
+ top:130px;
+ border: 16px solid #F6C570;
+ border-bottom-right-radius:100px;
+ border-bottom-left-radius:100px;
+ border-top:0;
+}
+.c3{
+  position: relative;
+  text-align: center;
+  height: 40px;
+  width: 20px;
+  top:50px;
+  left:40px;
+  background-color: #C34129;
+}
+.c4{
+  position: relative;
+  text-align: center;
+  height: 15px;
+  width: 16px;
+  top:42px;
+  left:0px;
+  background-color: #F6C570;
+  transform-origin: 0 100%;
+  transition: all 100ms ease-in-out;
+}
+.c:hover .c4 {
+transform:scaleY(3);
+}
+
+.r{
+  top:285px;
+  left: 215px;
+  position: absolute;
+}
+.r1{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height: 40px;
+  width: 8px;
+  top:90px;
+  background-color: #F6C570;
+}
+.r2{
+  position: relative;
+  text-align: center;
+  height: 27px;
+  width: 32px;
+  top:60px;
+   border: 15px solid #F6C570;
+  border-top-right-radius:25px;
+  border-top-left-radius:25px;
+  border-bottom:0;
+  transform: rotate(90deg);
+}
+.r3{
+    position: relative;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    top:50px;
+    background-color:#C34129;
+}
+.r4{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height: 39px;
+  width: 8px;
+  top:55px;
+  background-color: #F6C570;
+}
+.r5{
+  position: relative;
+  text-align: center;
+  border-left: 8px solid #F6C570;
+  height: 45px;
+  width: 7px;
+  top:10px;
+  left:31.5px;
+  background-color: #F6C570;
+  transform: skewx(25deg);
+}
+.r6{
+  position: relative;
+  text-align: center;
+  height: 15px;
+  width: 15px;
+  top:-5px;
+  background-color: #303960;
+  transform-origin: 0 100%;
+  transition: all 100ms ease-in-out;
+}
+.r:hover .r6{
+transform:scaleY(7.05);
+}
+
+.a2{
+  top:290px;
+  left: 305px;
+  position: absolute;
+
+}
+.a21{
+  position: relative;
+  text-align: center;
+  border-left: 6px solid #F6C570;
+  height: 50px;
+  width: 7px;
+  top:90px;
+  background-color: #F6C570;
+  transform: skewx(-12deg);
+
+}
+.a22{
+  position: relative;
+  text-align: center;
+  border-left: 6px solid #F6C570;
+  height: 50px;
+  width: 7px;
+  top:40px;
+  left:13px;
+  background-color: #F6C570;
+  transform: skewx(12deg);
+}
+.a23{
+  position: relative;
+    text-align: center;
+    border-left: 6px solid #303960;
+    height: 17px;
+    width: 8px;
+    top: 70px;
+    left: -16px;
+    background-color: #303960;
+    transform: skewx(-12deg);
+    transform-origin: 0 100%;
+    transition: all 100ms ease-in-out;
+}
+.a2:hover .a23 {
+  transform: skewx(-12deg) scaleY(5.7);
+}
+.a24{
+  position: relative;
+  text-align: center;
+  border-left: 6px solid #303960;
+  height: 17px;
+  width: 8px;
+  top:53px;
+  left:25px;
+  background-color: #303960;
+  transform: skewx(12deg);
+}
+
+.z{
+  top:285px;
+  left: 370px;
+  position: absolute;
+}
+.z1{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height: 15px;
+  width: 50px;
+  top:94px;
+  background-color: #F6C570;
+}
+.z2{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height: 15px;
+  width: 50px;
+  top:168px;
+  background-color: #F6C570;
+}
+.z3{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #303960;
+  height: 40px;
+  width: 8px;
+  top:114px;
+  left:0px;
+  background-color: #303960;
+  transform: skewX(-29deg);
+  transform-origin:0% 100% ;
+  transition: all 100ms ease-in-out;
+}
+.z:hover .z3{
+transform:skewX(-29deg)scaleY(1.9);
+}
+
+.y{
+  top:287px;
+  left: 465px;
+  position: absolute;
+}
+.y1{
+  position: relative;
+    text-align: center;
+    border-left: 7px solid #F6C570;
+    height: 37px;
+    width: 8px;
+    top: 90px;
+    background-color: #F6C570;
+    transform: skewx(22deg);
+    transform-origin: 0 100%;
+    transition: all 100ms ease-in-out;
+
+}
+.y2{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height:37px;
+  width: 8px;
+  top:53px;
+  left:28px;
+  background-color: #F6C570;
+  transform: skewx(-22deg);
+}
+.y3{
+    position: relative;
+    text-align: center;
+    border-left: 7px solid #303960;
+    height: 35px;
+    width: 8px;
+    top:87px;
+    left:10px;
+    background-color: #303960;
+    transform-origin:0% 100% ;
+    transition: all 100ms ease-in-out;
+  }
+  .y:hover .y3{
+  transform:scaleY(1.5);
+  }
+
+.centerer {
+  display:grid;
+  justify-items:center;
+}
+
+</style>
+
+
+<body>
+
+  <div class="centerer">
+    <div style="width:870px; position:relative;top:-350px">
+
+  <a href="type2.html" class="botton1"></a>
+  <a href="type.html" class="botton2"></a>
+  <a href="type3.html" class="botton3"></a>
+
+  <div class="a1">
+  <div class="a11">
+  </div>
+  <div class="a12">
+  </div>
+  <div class="a13">
+  </div>
+  <div class="a14">
+  </div>
+    </div>
+
+  <div class="l1">
+  <div class="l11 ">
+  </div>
+  <div class="l12">
+  </div>
+  <div class="l13">
+  </div>
+  </div>
+
+  <div class="i1">
+  <div class="i11 ">
+  </div>
+  <div class="i12">
+  </div>
+  <div class="i13">
+  </div>
+  </div>
+
+  <div class="t1">
+  <div class="t11 ">
+  </div>
+  <div class="t12">
+  </div>
+  </div>
+
+  <div class="t2">
+  <div class="t21 ">
+  </div>
+  <div class="t22">
+  </div>
+  </div>
+
+  <div class="l2">
+  <div class="l21 ">
+  </div>
+  <div class="l22">
+  </div>
+  <div class="l23">
+  </div>
+  </div>
+
+  <div class="e">
+  <div class="e1">
+  </div>
+  <div class="e2">
+  </div>
+  <div class="e3">
+  </div>
+  <div class="e4">
+  </div>
+  <div class="e5">
+  </div>
+  <div class="e6">
+  </div>
+  </div>
+
+  <div class="b">
+  <div class="b1">
+  </div>
+  <div class="b2">
+  </div>
+  <div class="b3">
+  </div>
+  <div class="b4">
+  </div>
+  <div class="b5">
+  </div>
+  <div class="b6">
+  </div>
+  </div>
+
+  <div class="i2">
+  <div class="i21 ">
+  </div>
+  <div class="i22">
+  </div>
+  <div class="i23">
+  </div>
+  </div>
+
+  <div class="t3">
+  <div class="t31 ">
+  </div>
+  <div class="t32">
+  </div>
+  </div>
+
+  <div class="c">
+  <div class="c1">
+  </div>
+  <div class="c2">
+  </div>
+  <div class="c3">
+  </div>
+  <div class="c4">
+  </div>
+  </div>
+
+  <div class="r">
+  <div class="r1 ">
+  </div>
+  <div class="r2">
+  </div>
+  <div class="r3 ">
+  </div>
+  <div class="r4">
+  </div>
+  <div class="r5 ">
+  </div>
+  <div class="r6">
+  </div>
+  </div>
+
+  <div class="a2">
+  <div class="a21">
+  </div>
+  <div class="a22">
+  </div>
+  <div class="a23">
+  </div>
+  <div class="a24">
+  </div>
+  </div>
+
+  <div class="z">
+  <div class="z1 ">
+  </div>
+  <div class="z2">
+  </div>
+  <div class="z3 ">
+  </div>
+  </div>
+
+  <div class="y">
+  <div class="y1 ">
+  </div>
+  <div class="y2">
+  </div>
+  <div class="y3 ">
+  </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

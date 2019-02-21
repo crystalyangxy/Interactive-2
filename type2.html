@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crystal Yang</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+<style>
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+    width:100%;
+}
+
+body {
+  display: table-cell;
+  vertical-align:middle;
+  text-align:center;
+  margin: 0px;
+  padding: 0px;
+  max-width: 100vw;
+  overflow-x:hidden;
+  background-color: #303960;
+}
+.botton1{
+  background-color: #F6C570;
+  height:20px;
+  width:45px;
+  left:930px;
+  top:60px;
+  position: absolute;
+}
+.botton2{
+  background-color:#F6C570;
+  height:20px;
+  width:45px;
+  left:930px;
+  top:130px;
+  position: absolute;
+}
+.botton3{
+  background-color:#F6C570;
+  height:20px;
+  width:45px;
+  left:930px;
+  top:200px;
+  position: absolute;
+}
+
+.all{
+  width:80px;
+  height:50px;
+  top:280px;
+  left:330px;
+  position: absolute;
+  background-color: #303960;
+}
+
+.v{
+  top:50px;
+  left: -185px;
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+.v1{
+  position: relative;
+  text-align: center;
+  border-left: 6px solid #C34129;
+  height: 50px;
+  width: 7px;
+  top:90px;
+  background-color: #C34129;
+  transform: skewx(-12deg);
+  display: none;
+
+}
+.v2{
+  position: relative;
+  text-align: center;
+  border-left: 6px solid #C34129;
+  height: 50px;
+  width: 7px;
+  top:40px;
+  left:13px;
+  background-color: #C34129;
+  transform: skewx(12deg);
+  display: none;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  opacity: 100px;
+
+}
+
+
+
+.v3{
+  position: relative;
+    text-align: center;
+    border-left: 6px solid #F6C570;
+    height: 17px;
+    width: 8px;
+    top: 70px;
+    left: -16px;
+    background-color: #F6C570;
+    transform: skewx(-12deg);
+
+}
+.v4{
+  position: relative;
+  text-align: center;
+  border-left: 6px solid #F6C570;
+  height: 17px;
+  width: 8px;
+  top:53px;
+  left:25px;
+  background-color: #F6C570;
+  transform: skewx(12deg);
+}
+
+
+
+.a{
+  top:-90px;
+  left: -85px;
+  position: absolute;
+  color: black;
+}
+.a1{
+  position: relative;
+  text-align: center;
+  border-left: 6px solid #C34129;
+  height: 50px;
+  width: 7px;
+  top:90px;
+  background-color: #C34129;
+  transform: skewx(-12deg);
+display: none;
+
+}
+.a2{
+  position: relative;
+  text-align: center;
+  border-left: 6px solid #C34129;
+  height: 50px;
+  width: 7px;
+  top:40px;
+  left:13px;
+  background-color: #C34129;
+  transform: skewx(12deg);
+  display: none;
+
+}
+
+.a3{
+  position: absolute;
+    text-align: center;
+    border-left: 6px solid #F6C570;
+    height: 17px;
+    width: 8px;
+    top: 175px;
+    left: -16px;
+    background-color: #F6C570;
+    transform: skewx(-12deg);
+
+}
+
+.a4{
+  position: absolute;
+  text-align: center;
+  border-left: 6px solid #F6C570;
+  height: 17px;
+  width: 8px;
+  top:175px;
+  left:25px;
+  background-color: #F6C570;
+  transform: skewx(12deg);
+}
+.a:hover .a1{
+  display: block;
+}
+.a:hover .a2{
+  display: block;
+}
+
+.g{
+  top:-125px;
+  left: 15px;
+  position: absolute;
+  color: black;
+}
+.g1{
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 2.5px;
+  width: 0px;
+  top:120px;
+  border: 16px solid #C34129;
+  border-top-right-radius:100px;
+  border-top-left-radius:100px;
+  border-bottom:0;
+
+}
+.g2{
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 2.5px;
+  width: 0px;
+  top:140px;
+  border: 16px solid #C34129;
+  border-top-right-radius:100px;
+  border-top-left-radius:100px;
+  border-bottom:0;
+  transform: rotate(180deg);
+}
+.g3{
+  position: relative;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+  top:60px;
+  left:40px;
+  background-color: #303960;
+}
+.g4{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #C34129;
+  height:15px;
+  width: 20px;
+  top:55px;
+  left:29px;
+  background-color: #C34129;
+}
+.g5{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #C34129;
+  height:5px;
+  width: 9px;
+  top:55px;
+  left:40px;
+  background-color: #C34129;
+}
+
+.u{
+  top:-95px;
+  left:115px;
+  position: absolute;
+}
+.u1{
+  position: relative;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height: 26px;
+  width: 8px;
+  top:94px;
+  left:51px;
+  background-color: #F6C570;
+}
+.u2{
+    position: relative;
+    text-align: center;
+    border-left: 7px solid #F6C570;
+    height: 26px;
+    width: 8px;
+    top:68px;
+    left:11px;
+    background-color: #F6C570;
+
+}
+.u3{
+  position: relative;
+ text-align: center;
+ padding: 12px;
+ margin-bottom: 6px;
+ height: 10px;
+ width: 0px;
+ top:100px;
+ left: 10px;
+ border: 16px solid #C34129;
+ border-bottom-right-radius:100px;
+ border-bottom-left-radius:100px;
+ border-top:0;
+ display: none;
+}
+
+.u:hover .u3{
+  display: block;
+}
+
+
+.e{
+  top:-90px;
+  left:245px;
+  position: absolute;
+  color: black;
+}
+.e1{
+  position: absolute;
+  text-align: center;
+  border-left: 7px solid #C34129;
+  height: 40px;
+  width: 8px;
+  top:90px;
+  background-color: #C34129;
+  display: none;
+
+}
+.e2{
+  position: absolute;
+  text-align: center;
+  border-left: 7px solid #C34129;
+  height:15px;
+  width: 38px;
+  top:90px;
+  background-color: #C34129;
+  display: none;
+
+}
+.e3{
+  position: absolute;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height:15px;
+  width: 15px;
+  top:134px;
+  left:20px;
+  background-color: #F6C570;
+}
+.e4{
+  position: absolute;
+  text-align: center;
+  border-left: 7px solid #C34129;
+  height: 40px;
+  width: 8px;
+  top:153px;
+  background-color: #C34129;
+  display: none;
+}
+.e5{
+  position: absolute;
+  text-align: center;
+  border-left: 7px solid #C34129;
+  height:15px;
+  width: 38px;
+  top:178px;
+  background-color: #C34129;
+
+  display: none;
+}
+.e:hover .e1{
+  display: block;
+}
+.e:hover .e2{
+  display: block;
+}
+.e:hover .e4{
+  display: block;
+}
+.e:hover .e5{
+  display: block;
+}
+.e2nd{
+  top:-90px;
+  left: 345px;
+  position: absolute;
+  color: black;
+}
+.e21{
+  position:absolute;
+  text-align: center;
+  border-left: 7px solid #C34129;
+  height: 40px;
+  width: 8px;
+  top:90px;
+  background-color: #C34129;
+  display: none;
+}
+.e22{
+  position: absolute;
+  text-align: center;
+  border-left: 7px solid #C34129;
+  height:15px;
+  width: 38px;
+  top:90px;
+  background-color: #C34129;
+  display: none;
+
+}
+.e23{
+  position: absolute;
+  text-align: center;
+  border-left: 7px solid #F6C570;
+  height:15px;
+  width: 15px;
+  top:134px;
+  left:20px;
+  background-color: #F6C570;
+}
+.e24{
+  position: absolute;
+  text-align: center;
+  border-left: 7px solid #C34129;
+  height: 40px;
+  width: 8px;
+  top:153px;
+  background-color: #C34129;
+  display: none;
+}
+.e25{
+  position: absolute;
+  text-align: center;
+  border-left: 7px solid #C34129;
+  height:15px;
+  width: 38px;
+  top:178px;
+  background-color: #C34129;
+  display: none;
+}
+.e2nd:hover .e21{
+  display: block;
+}
+.e2nd:hover .e22{
+  display: block;
+}
+.e2nd:hover .e24{
+  display: block;
+}
+.e2nd:hover .e25{
+  display: block;
+}
+
+
+.all:hover .v1{
+display: block;
+}
+.all:hover .v2{
+display: block;
+}
+.all:hover .a1{
+  display: block;
+}
+.all:hover .a2{
+  display: block;
+}
+.all:hover .u3{
+  display: block;
+}
+.all:hover .e1{
+  display: block;
+}
+.all:hover .e2{
+  display: block;
+}
+.all:hover .e4{
+  display: block;
+}
+.all:hover .e5{
+  display: block;
+
+  }
+
+.all:hover .e21{
+  display: block;
+}
+.all:hover .e22{
+  display: block;
+}
+.all:hover .e24{
+  display: block;
+}
+.all:hover .e25{
+  display: block;
+}
+
+
+.v:hover .v1{
+display: block;
+}
+.v:hover .v2{
+display: block;
+}
+.v:hover .a1{
+  display: none;
+}
+.v:hover .a2{
+  display: none;
+}
+.v:hover .u3{
+  display: none;
+}
+.v:hover .e1{
+  display: none;
+}
+.v:hover .e2{
+  display: none;
+}
+.v:hover .e4{
+  display: none;
+}
+.v:hover .e5{
+  display: none;
+}
+.v:hover .e21{
+  display: none;
+}
+.v:hover .e22{
+  display: none;
+}
+.v:hover .e24{
+  display: none;
+}
+.v:hover .e25{
+  display: none;
+}
+.centerer {
+  display:grid;
+  justify-items:center;
+}
+
+</style>
+<div class="centerer">
+  <div style="width:870px; position:relative;top:-350px">
+
+<body>
+  <a href="type2.html" class="botton1"></a>
+  <a href="type.html" class="botton2"></a>
+  <a href="type3.html" class="botton3"></a>
+<div class="all">
+<div class="v">
+<div class="v1">
+</div>
+<div class="v2">
+</div>
+<div class="v3">
+</div>
+<div class="v4">
+</div>
+</div>
+
+
+
+<div class="a">
+<div class="a1">
+</div>
+<div class="a2">
+</div>
+<div class="a3">
+</div>
+<div class="a4">
+</div>
+</div>
+
+<div class="g">
+<div class="g1">
+</div>
+<div class="g2">
+</div>
+<div class="g3">
+</div>
+<div class="g4">
+</div>
+<div class="g5">
+</div>
+
+</div>
+
+<div class="u">
+<div class="u1">
+</div>
+<div class="u2">
+</div>
+<div class="u3">
+</div>
+<div class="u4">
+</div>
+<div class="u5">
+</div>
+</div>
+
+<div class="e">
+<div class="e1">
+</div>
+<div class="e2">
+</div>
+<div class="e3">
+</div>
+<div class="e4">
+</div>
+<div class="e5">
+</div>
+</div>
+
+<div class="e">
+<div class="e1">
+</div>
+<div class="e2">
+</div>
+<div class="e3">
+</div>
+<div class="e4">
+</div>
+<div class="e5">
+</div>
+</div>
+
+<div class="e2nd">
+<div class="e21">
+</div>
+<div class="e22">
+</div>
+<div class="e23">
+</div>
+<div class="e24">
+</div>
+<div class="e25">
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
