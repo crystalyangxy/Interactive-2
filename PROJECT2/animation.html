@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crystal Yang</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Emblema+One" rel="stylesheet">
+<style>
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+    width:100%;
+}
+
+body {
+  display: table-cell;
+  vertical-align:middle;
+  text-align:center;
+  margin: 0px;
+  padding: 0px;
+  max-width: 100vw;
+  overflow-x:hidden;
+  background-color: #303960;
+}
+.all{
+  width:100px;
+  height:100px;
+  margin-top:50px;
+  margin-left:-220px;
+}
+
+.E1{
+  width:200px;
+  height:200px;
+  margin-top:200px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.E1.run {
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+
+/* Standard syntax */
+@keyframes fade {
+  from {background-color: white;}
+  to {background-color: #303960;}
+}
+
+.E2{
+  width:200px;
+  height:200px;
+  margin-top:200px;
+  left:350px;
+  background-color: white;
+  position: absolute;
+  animation-name: shake;
+}
+.E2:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.E3{
+  width:200px;
+  height:200px;
+  margin-top:200px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+}
+  .E3:hover {
+    animation: bounce 1.5s;
+    animation-iteration-count: infinite;
+  }
+
+
+
+@keyframes bounce {
+   0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+   40% {transform: translateY(-30px);}
+   60% {transform: translateY(-15px);}
+}
+
+
+.E4{
+  width:200px;
+   height:200px;
+   margin-top:480px;
+   margin-left:290px;
+   background-color: white;
+   position: absolute;
+   animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+.E4.run {
+  animation-name: mymove;
+}
+/* Standard syntax */
+@keyframes mymove {
+0%   {top: 0px; background: white; width: 200px; height:200px; opacity:0px; }
+100% {top: 200px; background: yellow; width: 50px; height:50px;opacity:100px;}
+}
+.E5{
+  width:200px;
+  height:200px;
+  margin-top:480px;
+  margin-left:570px;
+  background-color: white;
+  position: absolute;
+}
+.E5:hover {
+border-radius:100px;
+}
+
+.E6{
+  width:200px;
+  height:200px;
+  margin-top:480px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+}
+  .E6:hover{
+    animation:
+    pulse 10s ease infinite alternate,
+    nudge 10s linear infinite alternate;
+  border-radius: 100%;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: #303960;
+  }
+  50% {
+    background-color: orange;
+  }
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(150px, 0);
+  }
+
+  80% {
+    transform: translate(50px, 0);
+  }
+}
+
+.E7{
+  width:200px;
+  height:200px;
+  margin-top:760px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+}
+.E7.run {
+ animation-name: rotate;
+ animation-duration: 3s;
+}
+
+@keyframes rotate {
+0%   {transform:rotate(0deg);}
+100% {transform:rotate(180deg);}
+}
+
+.E8{
+  width:200px;
+  height:200px;
+  margin-top:760px;
+  margin-left:570px;
+  background-color: white;
+  position: absolute;
+
+}
+.E8:hover {
+  animation-name: fadeInDown;
+  animation: fadeInDown 0.5s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.E9{
+  width:200px;
+  height:200px;
+  margin-top:760px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+.E9:hover {
+  animation-name: flipInX;
+  animation: flipInX 0.5s;
+}
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.E10{
+  width:200px;
+  height:200px;
+  margin-top:1040px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+}
+.E10.run {
+ animation-name: moveDown;
+ animation: moveDown 1s ease-in-out 0.2s backwards;
+}
+@keyframes moveDown{
+    0% {
+        transform: translateY(40px);
+        border-radius: 80px;
+        color: white;
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(40px);
+        border-radius: 50px;
+        color: white;
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        border-radius: 0px;
+        color: white;
+        opacity: 1;
+    }
+}
+
+.E11{
+  width:200px;
+  height:200px;
+  margin-top:1040px;
+  margin-left:570px;
+  background-color: white;
+  position: absolute;
+}
+.E11:hover {
+  animation-name: leftmove;
+  animation: leftmove 0.5s;
+}
+
+@keyframes leftmove {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+}
+.E12{
+  width:200px;
+  height:200px;
+  margin-top:1040px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+  transform-origin:100% 120%;
+  animation-fill-mode: forwards;
+}
+.E12:hover {
+  animation-name: longer;
+  animation: longer 3s;
+}
+
+@keyframes longer {
+  0%{
+    opacity: 0;
+    color:white;
+    transform: scaleX(0px);
+  }
+
+  50%{
+    opacity: 1;
+    color: orange;
+    transform: scaleX(3);
+  }
+  100%{
+    opacity: 1;
+    color: orange;
+    transform: scaleX(3);
+  }
+}
+.E13{
+  width:200px;
+  height:200px;
+  margin-top:1300px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  color:white;
+  font-family: 'Emblema One', cursive;
+  font-size: 40pt;
+
+}
+.E13.run {
+ animation-name: words;
+}
+@keyframes words {
+  0% {background-color: white; border-radius: 0px}
+  100% {background-color: #303960;border-radius: 100px}
+}
+
+.E14{
+  width:200px;
+  height:200px;
+  margin-top:1300px;
+  margin-left:570px;
+  background-color: white;
+  position: absolute;
+}
+.E14:hover {
+  animation-name: rubberBand;
+  animation: rubberBand 3s;
+
+}
+@keyframes rubberBand {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  55% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  85% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.E15{
+  width:200px;
+  height:200px;
+  margin-top:1300px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+
+}
+.E15.run {
+ animation-name: rotate;
+}
+
+@keyframes rotate {
+0%   {transform:rotate(0deg);}
+100% {transform:rotate(180deg);}
+}
+
+.E16{
+  width:200px;
+  height:200px;
+  margin-top:1580px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+}
+.E17andE16{
+  width:200px;
+  height:200px;
+  background-color: #303960;
+  position: absolute;
+}
+.E17andE16:hover.E17 {
+ display: none;
+}
+
+.E17{
+  width:200px;
+  height:200px;
+  margin-top:1580px;
+  margin-left:570px;
+  background-color: white;
+  position: absolute;
+}
+
+.E17:hover {
+  animation-name: colour3;
+  animation: colour3 3s;
+}
+@keyframes colour3 {
+  0% {background-color: white;}
+  30% {background-color: #D1CF7E;}
+  60% {background-color: #AAD17E;}
+  80% {background-color: #7EAAD1;}
+  100% {background-color: white;}
+}
+
+
+.E18{
+  width:200px;
+  height:200px;
+  margin-top:1580px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+}
+.E18:hover {
+  animation-name: moveleft;
+  animation: moveleft 0.5s;
+}
+
+@keyframes moveleft {
+  0%{margin-left:850px;
+  }
+
+  100% {
+    margin-left:550px;
+  }
+}
+
+.E19{
+  width:200px;
+  height:200px;
+  margin-top:1860px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+}
+.E19:hover {
+  animation-name: enlarge;
+  animation: enlarge 5s;
+}
+@keyframes enlarge {
+
+  0%{width:200px;
+  height:200px;
+  }
+
+  50% {
+    height:500px;
+    width:500px;
+  }
+  100%{width:200px;
+  height:200px;
+  }
+}
+.E20{
+  width:200px;
+  height:200px;
+  margin-top:1860px;
+  margin-left:570px;
+  background-color: white;
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+.E20:hover {
+  animation-name: radiuschange;
+  animation: radiuschange 7s;
+}
+@keyframes radiuschange {
+
+  0%{border-radius:0px;
+  }
+
+  10% {
+    border-radius:70px;
+  }
+  20% {
+    border-radius:50px;
+  }
+  30% {
+    border-radius:100px;
+  }
+  50% {
+    border-radius:70px;
+  }
+  60% {
+    border-radius:50px;
+  }
+  100%{border-radius:100px;
+
+  }
+}
+
+.E21{
+  width:200px;
+  height:200px;
+  margin-top:1860px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+}
+.E21:hover {
+  animation-name: pulse;
+  animation: pulse 2s;
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.E22{
+  width:200px;
+  height:200px;
+  margin-top:2140px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+}
+.E22.run {
+  animation-name: flash;
+    animation: flash 2s;
+}
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.E23{
+  width:200px;
+  height:200px;
+  margin-top:2140px;
+  margin-left:570px;
+  background-color: white;
+  position: absolute;
+}
+.E23:hover {
+  animation-name: shake;
+  animation: shake 0.8s;
+}
+@keyframes shake {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+.E24{
+  width:200px;
+  height:200px;
+  margin-top:2140px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+}
+.E24:hover {
+  animation-name: swing;
+  animation: swing 0.8s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+.E25{
+  width:200px;
+  height:200px;
+  margin-top:2420px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+}
+.E25.run {
+  animation-name: wobble;
+  animation: wobble 0.8s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes wobble {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+.E26{
+  width:200px;
+  height:200px;
+  margin-top:2420px;
+  margin-left:570px;
+  background-color: white;
+  position: absolute;
+}
+.E26:hover {
+  animation-name: heartBeat;
+  animation: heartBeat 0.8s;
+}
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.3);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.3);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+}
+.E27{
+  width:200px;
+  height:200px;
+  margin-top:2420px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+}
+.E27:hover {
+  animation-name: fadeIn;
+  animation: fadeIn 0.8s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.E28{
+  width:200px;
+  height:200px;
+  margin-top:2700px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+}
+.E28:hover {
+  animation-name: flipInX;
+  animation: flipInX 5s;
+}
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+.E29{
+  width:200px;
+  height:200px;
+  margin-top:2700px;
+  margin-left:570px;
+  background-color: white;
+  position: absolute;
+}
+.E29:hover {
+  animation-name: leftmove2;
+  animation: leftmove2 3s;
+}
+
+@keyframes leftmove2 {
+  0% {
+    opacity: 0;
+    background-color:white;
+    transform: translateX(0);
+  }
+
+  20% {
+    opacity: 1;
+    background-color:orange;
+    transform: translateX(30px);
+  }
+  40% {
+    opacity: 0;
+    background-color:white;
+    transform: translateX(-30px);
+  }
+
+  60% {
+    opacity: 1;
+    background-color:orange;
+    transform: translateX(30px);
+  }
+  80% {
+    opacity: 0;
+    background-color:white;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    background-color:white;
+    transform: translateX(0px);
+  }
+}
+.E30{
+  width:200px;
+  height:200px;
+  margin-top:2700px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+}
+.E30:hover {
+  animation-name: mymove2;
+  animation: mymove2 3s;
+}
+@keyframes mymove2 {
+0%   { background: white;  height:200px; opacity:100px; transform: scaleY();}
+100% { background: #303960; height:0px;opacity:100px; scaleY();}
+}
+.E31{
+  width:200px;
+  height:200px;
+  margin-top:2980px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+}
+.E31.run {
+  animation-name: mymove3;
+  animation: mymove 2s infinite alternate;
+}
+@keyframes mymove3 {
+    0%   {top: 0px; background: red; width: 300px; opacity:100px; }
+    100% {top: 0px; background: yellow; width: 1000px;opacity:100px;}
+}
+.E32{
+  width:200px;
+  height:200px;
+  margin-top:2980px;
+  margin-left:570px;
+  background-color: white;
+  position: absolute;
+}
+.E32:hover {
+  animation-name: smalltolarge;
+  animation: smalltolarge 5s;
+}
+@keyframes smalltolarge {
+  0% {
+    transform: scale(1);
+  }
+
+  7% {
+    transform: scale(0.2);
+  }
+
+  21% {
+    transform: scale(1.8);
+  }
+
+  45% {
+    transform: scale(0.2);
+  }
+
+  69% {
+    transform: scale(1.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+.E33{
+  width:200px;
+  height:200px;
+  margin-top:2980px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+}
+.E33:hover {
+    animation: shake2 0.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes shake2 {
+    0% { transform: translate(10px, 10px) rotate(0deg); }
+    10% { transform: translate(-10px, -20px) rotate(-10deg); }
+    20% { transform: translate(-30px, 0px) rotate(10deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+.E34{
+  width:200px;
+  height:200px;
+  margin-top:3260px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+}
+.E34.run {
+ animation-name: rotate;
+ animation-duration: 1s;
+}
+
+@keyframes rotate {
+0%   {transform:rotate(0deg);}
+20% {transform:rotate(180deg);}
+40%   {transform:rotate(0deg);}
+60% {transform:rotate(180deg);}
+80%   {transform:rotate(0deg);}
+100% {transform:rotate(180deg);}
+}
+.E35{
+  width:200px;
+  height:200px;
+  margin-top:3260px;
+  margin-left:570px;
+  background-color: white;
+  position: absolute;
+}
+.E35:hover {
+  animation-name: fadeIn;
+  animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {  opacity: 0; background-color: yellow;}
+  20% { opacity: 1; background-color: white; }
+  40% {  opacity: 0; background-color: yellow; }
+  60% { opacity: 1; background-color: white; }
+  80% {  opacity: 0;  background-color: yellow;}
+  100% { opacity: 1;  background-color: white;}
+}
+.E36{
+  width:200px;
+  height:200px;
+  margin-top:3260px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+}
+.E36:hover {
+ opacity: 0.5;
+}
+
+.E37{
+  width:200px;
+  height:200px;
+  margin-top:3540px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+}
+
+.E37:hover {
+  animation-name: colorchange3;
+  animation: colorchange3 3s;
+}
+@keyframes colorchange3 {
+0% { background-color: white;}
+100% {background-color: lightgreen; }
+}
+
+.E38{
+  width:200px;
+  height:200px;
+  margin-top:3540px;
+  margin-left:570px;
+  background-color: white;
+  position: absolute;
+}
+.E38:hover {
+  animation-name: rotate;
+  animation: rotate 3s;
+}
+@keyframes rotate {
+0%   {transform:rotate(0deg);}
+50% {transform:rotate(90deg);border-radius: 100px;}
+100%   {transform:rotate(0deg);}
+}
+.E39{
+  width:200px;
+  height:200px;
+  margin-top:3540px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+}
+.E39:hover {
+  animation-name: rotate4;
+  animation: rotate4 3s;
+}
+@keyframes rotate4 {
+  0% { transform: translate(40px, 10px) rotate(0deg); }
+  30% { transform: translate(-10px, -20px) rotate(-10deg); }
+  60% { transform: translate(-30px, 0px) rotate(10deg); }
+  100% { transform: translate(3px, 2px) rotate(20deg); }
+}
+.E40{
+  width:200px;
+  height:200px;
+  margin-top:3820px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+}
+.E40:hover {
+  animation-name: wobble2;
+  animation: wobble2 3s;
+}
+@keyframes wobble2 {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  30% {
+    transform: translate3d(-50%, 0, 0) rotate3d(0, 0, 5, -20deg);
+  }
+
+  60% {
+    transform: translate3d(30%, 0, 0) rotate3d(0, 0, 5, 20deg);
+  }
+
+  90% {
+    transform: translate3d(-50%, 0, 0) rotate3d(0, 0, 5, -10deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.E41{
+  width:200px;
+  height:200px;
+  margin-top:3820px;
+  margin-left:570px;
+  background-color: white;
+  position: absolute;
+}
+.E41:hover {
+  animation-name: wobble3;
+  animation: wobble3 3s;
+}
+@keyframes wobble3 {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  30% {
+    transform: translate3d(-50%, 0, 0) rotate3d(100, 0, 5, -80deg);border-radius: 100px;
+  }
+
+  60% {
+    transform: translate3d(30%, 0, 0) rotate3d(10, 0, 5, 80deg);border-radius: 100px;
+  }
+
+  90% {
+    transform: translate3d(-50%, 0, 0) rotate3d(10, 0, 5, -40deg);border-radius: 100px;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.E42{
+  width:200px;
+  height:200px;
+  margin-top:3820px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+}
+.E42:hover {
+  animation-name: move;
+  animation: move 5s;
+}
+
+@keyframes move {
+  0% { margin-left:50px; }
+  40% { margin-top:3320px; }
+  70% { margin-left:50px; }
+  100% { margin-top:3320px; }
+}
+.E43{
+  width:200px;
+  height:200px;
+  margin-top:4100px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+}
+.E43:hover {
+  animation-name: move1;
+  animation: move1 5s;
+}
+
+@keyframes move1 {
+  0% { height:200px;width:200px;border-radius: 100px; }
+  50% { height:50px;width:50px;border-radius: 100px; }
+  100% { height:200px;width:200px;border-radius: 100px; }
+}
+.E44{
+  width:200px;
+  height:200px;
+  margin-top:4100px;
+  margin-left:570px;
+  background-color: white;
+  position: absolute;
+}
+.E44:hover {
+  animation-name: move2;
+  animation: move2 5s;
+}
+
+@keyframes move2 {
+  0% { height:1000px;background: yellow;}
+  50% { height:50px;background: yellow;}
+  100% { height:200px;background: yellow;}
+}
+
+.E45{
+  width:200px;
+  height:200px;
+  margin-top:4100px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+  font-family: 'Emblema One', cursive;
+  color:#303960;
+
+
+}
+.E45:hover {
+  animation-name: typecolorchange;
+  animation: typecolorchange 3s;
+}
+
+@keyframes typecolorchange {
+  0% {color:#303960; }
+  50% {color:white; }
+  100% { color:#303960;}
+}
+.E46{
+  width:200px;
+  height:200px;
+  margin-top:4380px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+.E46:hover {
+  animation-name: rotate5;
+  animation: rotate5 3s infinite;
+}
+@keyframes rotate5 {
+  0% { border-radius: 100%;transition: rotate(0deg); }
+  100% {  border-radius: 100%;transform: rotate(360deg); }
+}
+.E47{
+  width:200px;
+  height:200px;
+  margin-top:4380px;
+  margin-left:570px;
+  background-color: white;
+  position: absolute;
+}
+.E47.run {
+  animation-name: rotate6;
+  animation: rotate6 3s ;
+}
+@keyframes rotate6 {
+  0% { transition: rotate(0deg); }
+  100% { transform: rotate(90deg); }
+}
+.E48{
+  width:200px;
+  height:200px;
+  margin-top:4380px;
+  margin-left:850px;
+  background-color: white;
+  position: absolute;
+}
+.E48:hover {
+  animation: bounce 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-30px);transform-origin: rotate3d(0, 0, 5, -10deg);}
+ 60% {transform: translateY(-15px);transform: rotate3d(0, 0, 5, -10deg);}
+}
+.E49{
+  width:200px;
+  height:200px;
+  margin-top:4660px;
+  margin-left:290px;
+  background-color: white;
+  position: absolute;
+  transform-origin:100% 120%;
+}
+.E49:hover {
+transform:scaleY(1.3) scaleX(1.3);
+}
+
+.E50{
+  width:200px;
+  height:200px;
+  margin-top:4660px;
+  margin-left:570px;
+  margin-bottom: 200px;
+  background-color: white;
+  position: absolute;
+}
+.E50:hover {
+animation-name: rotate7;
+animation: rotate7 3s ;
+}
+
+@keyframes rotate7 {
+  0% { height:}
+  30% { transform: translate(-100px, -200px);border-radius: 50px}
+  60% { transform: translate(-300px, 0px);border-radius:100px; }
+  100% { transform: translate(300px, 200px); border-radius: 50px}
+}
+
+
+
+
+
+
+
+
+
+
+.centerer {
+  display:grid;
+  justify-items:center;
+}
+
+</style>
+
+
+<body>
+  <div class="centerer">
+    <div style="width:900px; position:relative;top:-350px">
+
+<div class="all">
+
+<div class="E1">1
+</div>
+
+<div class="E2">2
+</div>
+
+<div class="E3">3
+
+</div>
+
+<div class="E4">4
+</div>
+
+<div class="E5">5
+</div>
+
+<div class="E6">6
+</div>
+
+<div class="E7">7
+</div>
+
+<div class="E8">8
+</div>
+
+<div class="wrapperDiv">
+<div class="E9">9
+</div>
+  </div>
+
+<div class="E10">10
+</div>
+
+<div class="E11">11
+</div>
+
+<div class="E12">12
+</div>
+
+<div class="E13">
+  HELLO<br>
+  HELLO<br>
+  HELLO
+</div>
+
+<div class="E17andE16">
+  <div class="E17">17
+  </div>
+<div class="E16">16
+</div>
+</div>
+
+<div class="E14">14
+</div>
+
+<div class="E15">15
+</div>
+
+
+
+
+<div class="E18">18
+</div>
+
+<div class="E19">19
+</div>
+
+<div class="E20">20
+</div>
+
+<div class="E21">21
+</div>
+
+<div class="E22">22
+</div>
+
+<div class="E23">23
+</div>
+
+<div class="E24">24
+</div>
+
+<div class="E25">25
+</div>
+
+<div class="E26">26
+</div>
+
+<div class="E27">27
+</div>
+
+<div class="E28">28
+</div>
+
+
+
+<div class="E29">29
+</div>
+
+<div class="E30">30
+</div>
+
+<div class="E31">31
+</div>
+
+<div class="E32">32
+</div>
+
+<div class="E33">33
+</div>
+
+<div class="E34">34
+</div>
+
+<div class="E35">35
+</div>
+
+<div class="E36">36
+</div>
+
+<div class="E37">37
+</div>
+
+<div class="E38">38
+</div>
+
+<div class="E39">39
+</div>
+
+<div class="E40">40
+</div>
+
+<div class="E41">41
+</div>
+
+<div class="E42">42
+</div>
+
+<div class="E43">43
+</div>
+
+<div class="E44">44
+</div>
+
+<div class="E45"><br><br><br><br>GOOD
+</div>
+
+<div class="E46">46
+</div>
+
+<div class="E47">47
+</div>
+
+<div class="E48">48
+</div>
+
+<div class="E49">49
+</div>
+
+<div class="E50">50
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+<script>
+
+  let e1 = document.querySelector('.E1')
+  e1.addEventListener('click',function(){
+    e1.classList.add('run')
+  })
+
+  let e4 = document.querySelector('.E4')
+  e4.addEventListener('click',function(){
+    e4.classList.add('run')
+  })
+  let e7 = document.querySelector('.E7')
+  e7.addEventListener('click',function(){
+    e7.classList.add('run')
+  })
+  let e10 = document.querySelector('.E10')
+  e10.addEventListener('click',function(){
+    e10.classList.add('run')
+  })
+  let e13 = document.querySelector('.E13')
+  e13.addEventListener('click',function(){
+    e13.classList.add('run')
+  })
+  let e16 = document.querySelector('.E16')
+  e16.addEventListener('click',function(){
+    e16.classList.add('run')
+  })
+  let e22 = document.querySelector('.E22')
+  e22.addEventListener('click',function(){
+    e22.classList.add('run')
+  })
+  let e25 = document.querySelector('.E25')
+  e25.addEventListener('click',function(){
+    e25.classList.add('run')
+  })
+  let e34 = document.querySelector('.E34')
+  e34.addEventListener('click',function(){
+    e34.classList.add('run')
+  })
+  let e31 = document.querySelector('.E31')
+  e31.addEventListener('click',function(){
+    e31.classList.add('run')
+  })
+  let e47 = document.querySelector('.E47')
+  e47.addEventListener('click',function(){
+    e47.classList.add('run')
+  })
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
