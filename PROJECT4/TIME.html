@@ -1,0 +1,382 @@
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Russo+One|Source+Code+Pro:700" rel="stylesheet">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <style>
+  html, body {
+      height: 100%;
+  }
+
+  html {
+      display: table;
+      margin: auto;
+      width:100%;
+  }
+
+  body {
+    display: table-cell;
+    vertical-align:middle;
+    text-align:center;
+    margin: 0px;
+    padding: 0px;
+    max-width: 100vw;
+    overflow-x:hidden;
+    background-color: black;
+  }
+
+.part1{
+  font-family:'Russo One', sans-serif;
+  font-size: 100px;
+  line-height: 115px;
+  left:-740px;
+  top: 0px;
+  position: absolute;
+  color: white;
+  letter-spacing:40px;
+}
+.part2{
+  font-family:'Russo One', sans-serif;
+  font-size: 100px;
+  line-height: 115px;
+  left:0px;
+  top: 0px;
+  position: absolute;
+  color: white;
+  letter-spacing:40px;
+}
+.cricle{
+  height:450px;
+  width:450px;
+  top:170px;
+  left:-240px;
+  border-radius: 400px;
+  background-color: yellow;
+  position:absolute;
+  opacity: 0.8;
+}
+
+
+.clock6{
+  font-family:'Russo One', sans-serif;
+  font-size: 50px;
+  line-height: 150px;
+  left:-160px;
+  top: 320px;
+  position: absolute;
+  color: black;
+  letter-spacing:10px;
+}
+  .centerer {
+    display:grid;
+    justify-items:center;
+  }
+  </style>
+
+  <body
+  <div class="centerer">
+    <div style="width:0px; position:relative;top:0px">
+
+
+<div class="part1">
+    <div id="clock">
+      a
+    </div>
+
+    <div id="clock2">
+      a
+    </div>
+
+    <div id="clock3">
+      a
+    </div>
+
+    <div id="clock4">
+      a
+    </div>
+
+    <div id="clock5">
+      a
+    </div>
+
+    <div id="clock7">
+      a
+    </div>
+
+    <div id="clock8">
+      a
+    </div>
+</div>
+<div class="part2">
+    <div id="clock9">
+      a
+    </div>
+
+    <div id="clock10">
+      a
+    </div>
+
+    <div id="clock11">
+      a
+    </div>
+
+    <div id="clock12">
+      a
+    </div>
+
+    <div id="clock13">
+      a
+    </div>
+
+    <div id="clock14">
+      a
+    </div>
+
+    <div id="clock15">
+      a
+    </div>
+</div>
+
+
+
+
+<div class="cricle">
+</div>
+
+<div class="clock6">
+<div id="clock6">
+</div>
+</div>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+
+
+  </div>
+  </div>
+  </body>
+<script>
+let clockEl = document.querySelector('#clock')
+let clockEl2 = document.querySelector('#clock2')
+let clockEl3 = document.querySelector('#clock3')
+let clockEl4 = document.querySelector('#clock4')
+let clockEl5 = document.querySelector('#clock5')
+let clockEl6 = document.querySelector('#clock6')
+let clockEl7 = document.querySelector('#clock7')
+let clockEl8 = document.querySelector('#clock8')
+let clockEl9 = document.querySelector('#clock9')
+let clockEl10 = document.querySelector('#clock10')
+let clockEl11 = document.querySelector('#clock11')
+let clockEl12 = document.querySelector('#clock12')
+let clockEl13 = document.querySelector('#clock13')
+let clockEl14 = document.querySelector('#clock14')
+let clockEl15 = document.querySelector('#clock15')
+let clockEl16 = document.querySelector('#clock16')
+
+// run getTime once on load
+
+getTime();
+
+// call getTime every 1 second
+
+setInterval(function() {
+  getTime();
+}, 1000);
+
+
+
+
+// set up time getting function
+
+function getTime(){
+
+  // get the date
+
+  let d = new Date();
+
+
+  function getDateForTimeZone(offset){
+    var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+    var nd = new Date(utc + (3600000*offset));
+    return nd
+  }
+
+
+
+  // get hours, minutes, and seconds
+
+  let h = addZero(d.getHours());
+  let m = addZero(d.getMinutes());
+  let s = addZero(d.getSeconds());
+
+
+  clockEl.innerText = h + ':' + m + ':' + s
+
+
+
+
+  let clock2 = getDateForTimeZone("+8")
+
+    h = addZero(clock2.getHours());
+    m = addZero(clock2.getMinutes());
+    s = addZero(clock2.getSeconds());
+
+
+  clockEl2.innerText = h + ':' + m + ':' + s
+
+
+
+
+  let clock3 = getDateForTimeZone("+4")
+
+    h = addZero(clock3.getHours());
+    m = addZero(clock3.getMinutes());
+    s = addZero(clock3.getSeconds());
+
+  clockEl3.innerText = h + ':' + m + ':' + s
+
+
+
+let clock4 = getDateForTimeZone("+9")
+
+  h = addZero(clock4.getHours());
+  m = addZero(clock4.getMinutes());
+  s = addZero(clock4.getSeconds());
+
+clockEl4.innerText = h + ':' + m + ':' + s
+
+
+let clock5 = getDateForTimeZone("+1")
+
+  h = addZero(clock5.getHours());
+  m = addZero(clock5.getMinutes());
+  s = addZero(clock5.getSeconds());
+
+clockEl5.innerText = h + ':' + m + ':' + s
+
+
+
+let clock6 = getDateForTimeZone("-5")
+
+  h = addZero(clock6.getHours());
+  m = addZero(clock6.getMinutes());
+  s = addZero(clock6.getSeconds());
+
+clockEl6.innerText = h + ':' + m + ':' + s
+
+
+
+let clock7 = getDateForTimeZone("+3")
+
+  h = addZero(clock7.getHours());
+  m = addZero(clock7.getMinutes());
+  s = addZero(clock7.getSeconds());
+
+clockEl7.innerText = h + ':' + m + ':' + s
+
+
+
+let clock8 = getDateForTimeZone("-5")
+
+  h = addZero(clock8.getHours());
+  m = addZero(clock8.getMinutes());
+  s = addZero(clock8.getSeconds());
+
+clockEl8.innerText = h + ':' + m + ':' + s
+
+let clock9 = getDateForTimeZone("+8")
+
+  h = addZero(clock9.getHours());
+  m = addZero(clock9.getMinutes());
+  s = addZero(clock9.getSeconds());
+
+
+clockEl9.innerText = h + ':' + m + ':' + s
+
+
+
+
+let clock10 = getDateForTimeZone("+4")
+
+  h = addZero(clock10.getHours());
+  m = addZero(clock10.getMinutes());
+  s = addZero(clock10.getSeconds());
+
+clockEl10.innerText = h + ':' + m + ':' + s
+
+
+
+let clock11 = getDateForTimeZone("+9")
+
+h = addZero(clock11.getHours());
+m = addZero(clock11.getMinutes());
+s = addZero(clock11.getSeconds());
+
+clockEl11.innerText = h + ':' + m + ':' + s
+
+
+let clock12 = getDateForTimeZone("+1")
+
+h = addZero(clock12.getHours());
+m = addZero(clock12.getMinutes());
+s = addZero(clock12.getSeconds());
+
+clockEl12.innerText = h + ':' + m + ':' + s
+
+
+
+let clock13 = getDateForTimeZone("+0")
+
+h = addZero(clock13.getHours());
+m = addZero(clock13.getMinutes());
+s = addZero(clock13.getSeconds());
+
+clockEl13.innerText = h + ':' + m + ':' + s
+
+
+
+let clock14 = getDateForTimeZone("+3")
+
+h = addZero(clock14.getHours());
+m = addZero(clock14.getMinutes());
+s = addZero(clock14.getSeconds());
+
+clockEl14.innerText = h + ':' + m + ':' + s
+
+
+
+let clock15 = getDateForTimeZone("-5")
+
+h = addZero(clock15.getHours());
+m = addZero(clock15.getMinutes());
+s = addZero(clock15.getSeconds());
+
+clockEl15.innerText = h + ':' + m + ':' + s
+}
+
+
+
+// add a zero to times below 10
+
+function addZero(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+
+</script>
+</html>
