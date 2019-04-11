@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>resize me</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <style>
+  body {
+  transition:background 200ms ease;
+  font-size:2vw;
+  font-family:Menlo, monospace;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: pink;
+  }
+
+  h1 {
+    width:100vw;
+    position:absolute;
+    top:0;
+    left:0;
+    background:white;
+
+  }
+
+  .copy {
+    position:absolute;
+    bottom:0;
+  }
+
+}
+
+
+
+@media only screen and  (min-width: 601px) {
+  body {
+    padding:10vw;
+  }
+
+  h1 {
+    border:1px dashed black;
+    padding:30px;
+}
+}
+  </style>
+  <body>
+    <h1>resizing</h1>
+    <div class="copy">
+    </div>
+
+    <div class="image1">
+    <img src="image/pic3.png" style="width:50vw;" >
+    </div>
+
+  </body>
+</html>

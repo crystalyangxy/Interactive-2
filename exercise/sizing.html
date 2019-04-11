@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>resize me</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <style>
+
+  .image1{
+    position:absolute;
+    bottom:;
+    width:10vw;
+    height:14vw;
+    background-color: yellow;
+    opacity: 0.4;
+  }
+  .image2{
+    position:absolute;
+    bottom:;
+    width:10vw;
+    left:13vw;
+    height:16vw;
+    background-color: blue;
+    opacity: 0.4;
+  }
+  .image3{
+    position:absolute;
+    bottom:;
+    width:10vw;
+    height:18vw;
+    left:26vw;
+    background-color: green;
+    opacity: 0.4;
+  }
+  .image4{
+    position:absolute;
+    bottom:;
+    width:10vw;
+    height:11vw;
+    left:-13vw;
+    background-color: orange;
+    opacity: 0.4;
+  }
+  .image5{
+    position:absolute;
+    bottom:;
+    width:10vw;
+    height:8vw;
+    left:-26vw;
+    background-color: red;
+    opacity: 0.4;
+  }
+  #centerer {
+  position:absolute;
+  top:40vh;
+  left:45vw;
+  font-size:5vh;
+}
+}
+  </style>
+  <body>
+     <div id="centerer">
+    <div class="image1">
+    </div>
+    <div class="image2">
+    </div>
+    <div class="image3">
+    </div>
+    <div class="image4">
+    </div>
+    <div class="image5">
+    </div>
+  </div>
+
+
+
+
+<script>
+
+window.addEventListener('resize',pageResized)
+
+
+
+function pageResized(){
+  console.log(window.innerHeight, window.innerWidth)
+
+
+  let windowPercentOfScreen = (window.innerHeight / window.screen.height) * 100
+
+  let rotation = (window.innerWidth / window.screen.width) * 300
+
+  let colorFromScreenHeight = 'hsl(' + rotation + ','+windowPercentOfScreen+'%,70%)'
+  document.body.style.background = colorFromScreenHeight
+  printout.innerText = 'hsl(' + Math.round(rotation) + ','+Math.round(windowPercentOfScreen)+'%,70%)'
+}
+
+pageResized()
+
+</script>
+
+  </body>
+</html>
