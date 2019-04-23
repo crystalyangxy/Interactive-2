@@ -5,15 +5,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kanit:900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kanit:900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto" rel="stylesheet">
 
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
 
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+
 
   </head>
   <style>
@@ -23,31 +24,44 @@
     max-width: 100vw;
     overflow-x:hidden;
     background-color: #becbcf;
-    background-image: url("image/pic2.jpg");
   }
-.image{
-  width: 200vh;
-  top:50vh;
-}
+
 
 .back {
-  color:black;
+  color:white;
   font-family: 'Kanit', sans-serif;
   font-size: 1.5vw;
-  position:absolute;
+  position:fixed;
   top:2vw;
   left:2vw;
   z-index:100;
   text-decoration: none;
-
 }
 
-#myvideo{
+.title{
+  left:105vh;
+  top:25vh;
   position: fixed;
- right: 0;
- bottom: 0;
- min-width: 100%;
- min-height: 100%;
+  font-size: 2.5vh;
+  font-family: 'Kanit', sans-serif;
+}
+
+.info{
+  left:105vh;
+  top:30vh;
+  position: fixed;
+  font-size: 1.7vh;
+  line-height: 3vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#myVideo{
+ position: fixed;
+ top:0;
+ left:0;
+ width:100vw;
+ height: 100vh;
+ object-fit: cover;
 }
 
   #centerer {
@@ -58,21 +72,36 @@
 }
 }
   </style>
-  <body>
-     <div id="centerer">
+
+  <body style="height:300vh">
+    <div id="centerer">
   <a class="back" href="final1.html">BACK</a>
 
 
-    <div class="image1">
-    </div>
-    <div class="image2">
-    </div>
-    <div class="image3">
-    </div>
-    <div class="image4">
-    </div>
-    <div class="image5">
-    </div>
+    <div class="title">Céleste Boursier - Mougenot</div>
+  <div class="info">
+  Floating porcelain bowls clink together as they <br>
+  circulate gently on water, producing a percussive <br>
+  soundscape of unexpected musicality.<br><br>
+
+  The French artist Céleste Boursier-Mougenot has <br>
+  brought the architectural feature of the gazing pool <br>
+  indoors to create what he describes as “a kind of <br>
+  dream.” He explains, “The bowls are moved by an <br>
+  invisible force, and the presence of water is fascinating<br>
+  It makes for a totally natural connection between<br>
+   the objects. . . . I am spontaneously drawn by this <br>
+   type of state, between incertitude and floating.”<br>
+ </div>
+ <video  loop  id="myVideo">
+   <source src="image/video3.mp4" type="video/mp4">
+   Your browser does not support the video tag.
+ </video>
+
+
+<!-- <div class="back">
+  BACK
+</div> -->
   </div>
 
 
@@ -81,9 +110,14 @@
 
 
 
-
 <script>
-var pic = document.getElementById("pic2");
+var video = document.getElementById("myVideo");
+
+video.onclick = function(){
+
+video.play()
+}
+
 
 window.addEventListener('scroll',(e)=>{
 
@@ -95,7 +129,7 @@ window.addEventListener('scroll',(e)=>{
 
 
       let leftStart = 0;
-      let leftEnd = 90;
+      let leftEnd = 150;
 
       let widthStart = window.innerWidth
       let widthEnd = window.innerWidth * .40
@@ -119,6 +153,23 @@ window.addEventListener('scroll',(e)=>{
 
 
 })
+
+
+
+// window.addEventListener('resize',pageResized)
+//
+//
+//
+// function pageResized(){
+//   console.log(window.innerHeight, window.innerWidth)
+//
+//
+//   let windowPercentOfScreen = (window.innerHeight / window.screen.height) * 100
+//
+//
+//
+// pageResized()
+
 </script>
 
   </body>
