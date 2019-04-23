@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Kanit:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:900" rel="stylesheet">
 
 
     <!-- import the webpage's stylesheet -->
@@ -30,12 +32,29 @@
   color:white;
   font-family: 'Kanit', sans-serif;
   font-size: 1.5vw;
-  position:absolute;
+  position:fixed;
   top:2vw;
   left:2vw;
   z-index:100;
   text-decoration: none;
 
+}
+
+.title{
+  left:100vh;
+  top:25vh;
+  position: fixed;
+  font-size: 2.5vh;
+  font-family: 'Kanit', sans-serif;
+}
+
+.info{
+  left:100vh;
+  top:30vh;
+  position: fixed;
+  font-size: 1.7vh;
+  line-height: 3vh;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #myVideo{
@@ -60,10 +79,7 @@
     <div id="centerer">
   <a class="back" href="final1.html">BACK</a>
 
-    <video  loop  id="myVideo">
-      <source src="image/video2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+<div class="title">Anri Sala - Moth in B-Flat</div>
   <div class="info">
   The large body of performative sculptures based on conceptual <br>
   and physical inversion. Typically an instrument is played, the <br>
@@ -83,7 +99,10 @@
   “bridge”—a passage that breaks with the previously established <br>
   pattern and leads to a new movement.<br>
 
-
+  <video  loop  id="myVideo">
+    <source src="image/video2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
 
 <!-- <div class="back">
@@ -116,7 +135,7 @@ window.addEventListener('scroll',(e)=>{
 
 
       let leftStart = 0;
-      let leftEnd = 90;
+      let leftEnd = 150;
 
       let widthStart = window.innerWidth
       let widthEnd = window.innerWidth * .40
