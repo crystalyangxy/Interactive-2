@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>resize me</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:900" rel="stylesheet">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <style>
+  body {
+    margin: 0px;
+    padding: 0px;
+    max-width: 100vw;
+    overflow-x:hidden;
+    background-color: #becbcf;
+  }
+  .title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15vw;
+    position: absolute;
+    top:-2vw;
+    color: white;
+
+  }
+  .cd1{
+    width:18vw;
+    position: absolute;
+    top:23vw;
+    left:22vw;
+  }
+  .cd2{
+    width:18vw;
+    position: absolute;
+    top:22vw;
+    left:42vw;
+  }
+  .cd3{
+    width:18vw;
+    position: absolute;
+    top:23vw;
+    left:62vw;
+  }
+
+
+  #centerer {
+  position:absolute;
+  top:0vh;
+  left:0vw;
+  font-size:5vh;
+}
+}
+  </style>
+  <body>
+
+     <div id="centerer">
+    <div class="title">
+      SOUNDTRACK
+    </div>
+  <a href="final2.html"><img src="image/cd1.png"  class="cd1"/></a>
+    <a href="final3.html"><img src="image/cd2.png"  class="cd2"/></a>
+    <a href="final4.html"><img src="image/cd3.png"  class="cd3"/></a>
+
+
+    <div class="image1">
+    </div>
+    <div class="image2">
+    </div>
+    <div class="image3">
+    </div>
+    <div class="image4">
+    </div>
+    <div class="image5">
+    </div>
+  </div>
+
+
+
+
+
+
+
+<script>
+
+window.addEventListener('resize',pageResized)
+
+
+
+function pageResized(){
+  console.log(window.innerHeight, window.innerWidth)
+
+
+  let windowPercentOfScreen = (window.innerHeight / window.screen.height) * 100
+
+
+
+pageResized()
+
+</script>
+
+  </body>
+</html>

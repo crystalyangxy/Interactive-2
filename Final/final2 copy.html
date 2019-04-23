@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>resize me</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kanit:900" rel="stylesheet">
+
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's javascript file -->
+
+
+  </head>
+  <style>
+  body {
+    margin: 0px;
+    padding: 0px;
+    max-width: 100vw;
+    overflow-x:hidden;
+    background-color: #becbcf;
+    background-image: url("image/pic2.jpg")
+  }
+
+
+.back {
+  color:black;
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.5vw;
+  position:absolute;
+  top:2vw;
+  left:2vw;
+  z-index:100;
+  text-decoration: none;
+
+}
+
+#image{
+ position: fixed;
+ top:0;
+ left:0;
+ width:100vw;
+ height: 100vh;
+ object-fit: cover;
+}
+
+  #centerer {
+  position:absolute;
+  top:0vh;
+  left:0vw;
+  font-size:5vh;
+}
+}
+  </style>
+
+  <body style="height:300vh">
+    <div id="centerer">
+  <a class="back" href="final1.html">BACK</a>
+
+    <image  loop  id="image">
+      <source src="image/pic2.jpg">
+      Your browser does not support the video tag.
+    </video>
+  <div class="info">
+  Floating porcelain bowls clink together as they <br>
+  circulate gently on water, producing a percussive <br>
+  soundscape of unexpected musicality.<br><br>
+
+  The French artist Céleste Boursier-Mougenot has <br>
+  brought the architectural feature of the gazing pool <br>
+  indoors to create what he describes as “a kind of <br>
+  dream.” He explains, “The bowls are moved by an <br>
+  invisible force, and the presence of water is fascinating<br>
+  It makes for a totally natural connection between<br>
+   the objects. . . . I am spontaneously drawn by this <br>
+   type of state, between incertitude and floating.”<br>
+ </div>
+
+
+
+<!-- <div class="back">
+  BACK
+</div> -->
+  </div>
+
+
+
+
+
+
+
+<script>
+var image = document.getElementById("image");
+
+
+
+window.addEventListener('scroll',(e)=>{
+
+    let scrollValue = window.scrollY/window.innerHeight/2
+
+    scrollValue = scrollValue * scrollValue
+      let topStart = 0;
+      let topEnd = 208
+
+
+      let leftStart = 0;
+      let leftEnd = 90;
+
+      let widthStart = window.innerWidth
+      let widthEnd = window.innerWidth * .40
+
+      let heightStart = window.innerHeight
+      let heightEnd = window.innerHeight * .40
+
+
+      let curLeft = (leftEnd - leftStart) * scrollValue
+      let curTop = (topEnd - topStart) * scrollValue
+
+      let curWidth = widthStart + (widthEnd - widthStart) * scrollValue
+      let curHeight = heightStart + (heightEnd - heightStart) * scrollValue
+
+      video.style.top = curTop + 'px'
+      video.style.left = curLeft + 'px'
+      video.style.width = curWidth + 'px'
+      video.style.height = curHeight + 'px'
+
+
+
+
+})
+
+
+
+// window.addEventListener('resize',pageResized)
+//
+//
+//
+// function pageResized(){
+//   console.log(window.innerHeight, window.innerWidth)
+//
+//
+//   let windowPercentOfScreen = (window.innerHeight / window.screen.height) * 100
+//
+//
+//
+// pageResized()
+
+</script>
+
+  </body>
+</html>
