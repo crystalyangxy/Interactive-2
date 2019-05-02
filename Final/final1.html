@@ -23,32 +23,47 @@
     background-color: #becbcf;
   }
   .title{
-    font-family: 'Roboto', sans-serif;
-    font-size: 15vw;
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: 0.5vw;
+    font-size: 5vw;
     position: absolute;
-    top:-2vw;
+    top:10vw;
+    left:31.5vw;
     color: white;
-
   }
   .cd1{
     width:18vw;
     position: absolute;
     top:23vw;
     left:22vw;
+    transition:ease-in-out 300ms;
+  }
+  .cd1:hover {
+    animation-name: pulse;
+    transform: scale3d(1.2, 1.2, 1.2);
   }
   .cd2{
     width:18vw;
     position: absolute;
-    top:22vw;
+    top:23vw;
     left:42vw;
+    transition:ease-in-out 300ms;
+  }
+  .cd2:hover {
+    animation-name: pulse;
+    transform: scale3d(1.2, 1.2, 1.2);
   }
   .cd3{
     width:18vw;
     position: absolute;
     top:23vw;
     left:62vw;
+    transition:ease-in-out 300ms;
   }
-
+  .cd3:hover {
+    animation-name: pulse;
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
 
   #centerer {
   position:absolute;
@@ -56,7 +71,41 @@
   left:0vw;
   font-size:5vh;
 }
+
+@media only screen and (max-width: 600px) {
+  .cd2 {
+
+    width:40vw;
+    left:30vw;
+  }
+
+
+  .cd1 {
+    width:40vw;
+    left:30vw;
+    top:60vw;
+  }
+
+  .cd3 {
+    width:40vw;
+    left:28vw;
+    top:100vw;
+  }
+
+  .title{
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: 0.5vw;
+    font-size: 10vw;
+    position: absolute;
+    top:10vw;
+    left:16vw;
+    color: white;
+  }
+
 }
+
+
+
   </style>
   <body>
 
